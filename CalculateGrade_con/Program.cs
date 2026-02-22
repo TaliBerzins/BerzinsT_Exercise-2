@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.ReadLine("Enter Grade Point: ");
+Console.Write("Enter Grade Point: ");
 double numberGrade = Convert.ToDouble(Console.ReadLine());
 String letterGrade;
 if (numberGrade >= 88)
@@ -41,5 +41,16 @@ else
     letterGrade = "F";
 
 }
-Console.WriteLine($"The letter grade is: {letterGrade}");
+
+char repeatChar = '=';
+int repeatCount = 12;
+string repeatedString = new string(repeatChar, repeatCount);
+Console.WriteLine(repeatedString +"     " + repeatedString);
+Console.WriteLine("|Grade Point     Letter Grade|");
+Console.WriteLine(repeatedString +"     " + repeatedString);
+Console.WriteLine("{0, -1}{1, -12}{2,5}{3,12}", "|", numberGrade, letterGrade, "|");
+repeatCount = 29;
+string repeatedString2 = new string(repeatChar, repeatCount);
+Console.WriteLine(repeatedString2);
+
 
